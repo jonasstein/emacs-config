@@ -77,7 +77,6 @@
               ("en" utf-8 nil nil nil)
               ("ru" koi8-r nil nil nil))))
 (setq speck-hunspell-program "hunspell")
-;;(setq speck-hunspell-library-directory "C:/Program Files (x86)/ErgoEmacs5/hunspell/")
 (setq speck-hunspell-default-dictionary-name "en_US")
 
 
@@ -102,7 +101,8 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(graphviz-dot-indent-width 4)
- '(graphviz-dot-view-command "geeqie %s"))
+ '(graphviz-dot-view-command "geeqie %s")
+ '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De)))))
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
