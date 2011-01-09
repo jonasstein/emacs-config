@@ -2,6 +2,11 @@
 ;; http://xahlee.org/
 ;; 
 
+;; Auto-Complete
+;(require 'auto-complete)
+;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(require 'auto-complete-config)
+(ac-config-default)
 
 ;; Face-style
 
@@ -77,13 +82,14 @@
               ("en" utf-8 nil nil nil)
               ("ru" koi8-r nil nil nil))))
 (setq speck-hunspell-program "hunspell")
-(setq speck-hunspell-default-dictionary-name "en_US")
+(setq speck-hunspell-default-dictionary-name "de_DE")
+;; en_US
 
 
 
 
 (defun turn-spell-checking-on ()
-  (flyspell-mode 1)
+  (flyspell-mode 0)
   )
 
 
@@ -109,3 +115,6 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  )
+
+
+(require 'auto-complete)
