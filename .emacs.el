@@ -2,6 +2,9 @@
 ;; http://xahlee.org/
 ;; 
 
+(load-file "~/.emacs.d/auctex.el")
+
+
 ;; Auto-Complete
 ;; http://cx4a.org/software/auto-complete/manual.html#Installation
 ;(require 'auto-complete)
