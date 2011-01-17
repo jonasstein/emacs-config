@@ -3,14 +3,8 @@
 ;; 
 
 (load-file "~/.emacs.d/auctex.el")
+(load-file "~/.emacs.d/autocomplete.el")
 
-
-;; Auto-Complete
-;; http://cx4a.org/software/auto-complete/manual.html#Installation
-;(require 'auto-complete)
-;(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-(require 'auto-complete-config)
-(ac-config-default)
 
 ;; Face-style
 
@@ -121,4 +115,3 @@
  )
 
 
-(require 'auto-complete)
