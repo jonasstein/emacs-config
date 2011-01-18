@@ -1,5 +1,6 @@
 (load-file "~/.emacs.d/auctex.el")
 (load-file "~/.emacs.d/autocomplete.el")
+(load-file "~/.emacs.d/graphviz.el")
 
 
 ;; Face-style
@@ -100,14 +101,4 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- '(graphviz-dot-indent-width 4)
- '(graphviz-dot-view-command "geeqie %s")
  '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De)))))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
-
-
