@@ -1,6 +1,13 @@
 * EMACS Configuration
 
-
+  
 * Weblinks - where i found good snippets
   http://www.emacswiki.org/
-  
+  http://xahlee.org/
+
+* Structure
+** each mode has its own config file
+
+
+* Version
+** the config file should work with emacs 23
