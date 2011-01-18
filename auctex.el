@@ -22,7 +22,6 @@
             (define-key LaTeX-mode-map "\C-c\C-a"
              'align-current))))
 
-(setq-default ispell-program-name "aspell")
 
 (setq-default TeX-master "master") ; All master files called "master".
 (setq-default TeX-master nil)
