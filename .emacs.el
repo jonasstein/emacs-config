@@ -1,7 +1,3 @@
-;; this configuration file was created with these sources: 
-;; http://xahlee.org/
-;; 
-
 (load-file "~/.emacs.d/auctex.el")
 (load-file "~/.emacs.d/autocomplete.el")
 
