@@ -2,8 +2,8 @@
 
   
 * Weblinks - where i found good snippets
-  http://www.emacswiki.org/
-  http://xahlee.org/
+-  http://www.emacswiki.org/
+-  http://xahlee.org/
 
 * Structure
 ** each mode has its own config file
