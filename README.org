@@ -1,0 +1,6 @@
+* EMACS Configuration
+
+
+* Weblinks - where i found good snippets
+  http://www.emacswiki.org/
+  
