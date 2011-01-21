@@ -1,19 +1,22 @@
 (load-file "~/.emacs.d/auctex.el")
 (load-file "~/.emacs.d/autocomplete.el")
-(load-file "~/.emacs.d/graphviz.el")
+;; (load-file "~/.emacs.d/graphviz.el") FIXME
 
 
 ;; Face-style
 
 (setq inhibit-splash-screen t) 
-(set-face-font 'default "-Misc-Fixed-Medium-R-Normal--16-120-75-75-C-80-ISO8859-1")
+(set-face-font 'default "-Misc-Fixed-Medium-R-Normal--13-120-75-75-C-80-ISO8859-1")
 
 
 ;; http://www.emacswiki.org/cgi-bin/wiki/FrameTitle 
 (setq frame-title-format "%b in Emacs mode: %m")
 
 ;; decorations // display modes
-(setq display-time t)
+;(display-time t)
+;(display-time-24hr-format t)
+;(display-time-day-and-date t)
+(display-time-mode t)
 
 
 ; display line numbers in margin (fringe). Emacs 23 only.
@@ -34,14 +37,13 @@
 (setq auto-save-default nil) ; stop creating those #auto save# files
 
 
-
-
 ;; Hot keys
+
+; begin buffer cycling
+;=======================================================
 (global-set-key [(M-right)] 'forward-buffer)
 (global-set-key [(M-left)] 'backward-buffer)
 
-;==============================================================================
-; buffer cycling
 (defun backward-buffer () (interactive)
   "Switch to previously selected buffer."
   (let* ((list (cdr (buffer-list)))
@@ -62,9 +64,8 @@
         (setq list (cdr list))
         (setq buffer (car list))))
     (switch-to-buffer buffer)))
-
-
-
+;=======================================================
+; end buffer cycling
 
 ;; localisation
 (set-language-environment "utf-8")
@@ -80,9 +81,6 @@
 (setq speck-hunspell-default-dictionary-name "de_DE")
 ;; en_US
 
-
-
-
 (defun turn-spell-checking-on ()
   (flyspell-mode 0)
   )
@@ -90,10 +88,7 @@
 
 (add-hook 'text-mode-hook 'turn-spell-checking-on)
 
-
-
 ;; FIXME
-;;   dotmode
 ;;   emacs-goodies-el
 
 (custom-set-variables
@@ -102,3 +97,9 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De)))))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
