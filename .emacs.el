@@ -102,4 +102,8 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
- )
+ '(font-lock-comment-face ((((class color) (min-colors 88) (background light)) (:foreground "Darkgreen"))))
+ '(font-lock-constant-face ((((class color) (min-colors 88) (background light)) (:foreground "#202020" :weight bold))))
+ '(font-lock-keyword-face ((((class color) (min-colors 88) (background light)) (:foreground "Blue"))))
+ '(font-lock-preprocessor-face ((t (:foreground "dark red"))))
+ '(font-lock-type-face ((((class color) (min-colors 88) (background light)) (:foreground "#1010BB" :weight bold)))))
