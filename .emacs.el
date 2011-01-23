@@ -11,8 +11,8 @@
 ;; Face-style
 
 (setq inhibit-splash-screen t) 
-(set-face-font 'default "-Misc-Fixed-Medium-R-Normal--13-120-75-75-C-80-ISO8859-1")
-
+;; found this font with M-x set-default-font RET then TAB
+(set-face-font 'default "-misc-fixed-medium-r-normal--15-*-75-75-c-90-iso8859-15")
 
 ;; http://www.emacswiki.org/cgi-bin/wiki/FrameTitle 
 (setq frame-title-format "%b in Emacs mode: %m")
