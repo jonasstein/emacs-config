@@ -28,3 +28,6 @@
      (font-lock-warning-face ((t (:foreground "Red" :bold t))))
      )))
 (provide 'ergoday)
+
+;; created with a online theme creator on
+;; http://alexpogosyan.com/color-theme-creator/
