@@ -2,6 +2,11 @@
 (load-file "~/.emacs.d/autocomplete.el")
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
 
+(load-file "~/.emacs.d/ergoday-theme.el")
+
+(require 'color-theme)
+(color-theme-initialize)
+(ergoday)
 
 ;; Face-style
 
@@ -97,13 +102,5 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De)))))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(font-lock-comment-face ((((class color) (min-colors 88) (background light)) (:foreground "Darkgreen"))))
- '(font-lock-constant-face ((((class color) (min-colors 88) (background light)) (:foreground "#202020" :weight bold))))
- '(font-lock-keyword-face ((((class color) (min-colors 88) (background light)) (:foreground "Blue"))))
- '(font-lock-preprocessor-face ((t (:foreground "dark red"))))
- '(font-lock-type-face ((((class color) (min-colors 88) (background light)) (:foreground "#1010BB" :weight bold)))))
+
+
