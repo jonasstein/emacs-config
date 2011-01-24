@@ -1,4 +1,5 @@
-(load-file "~/.emacs.d/auctex.el")
+; (load-file "~/.emacs.d/auctex.el" nil t t) ;; does not work
+(load-file "~/.emacs.d/auctex.el") ; works
 (load-file "~/.emacs.d/autocomplete.el")
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
 
