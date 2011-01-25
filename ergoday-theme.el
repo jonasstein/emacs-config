@@ -31,3 +31,9 @@
 
 ;; created with a online theme creator on
 ;; http://alexpogosyan.com/color-theme-creator/
+;;
+;; colors should be intuitive, have high usability 
+;; in bright environment like a office
+;; for dark environment try "ergonight"
+;;
+;; Author: Jonas Stein <news@jonasstein.de>
