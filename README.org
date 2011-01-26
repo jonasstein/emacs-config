@@ -8,8 +8,12 @@
 
 
 * Structure
-** each mode has its own config file
+- each mode has its own config file
 
 
 * Version
-** the config file should work with emacs 23
+- the config file should work with emacs 23
+
+
+
+
