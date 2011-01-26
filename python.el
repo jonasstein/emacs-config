@@ -9,12 +9,18 @@
        '(
           ((python-mode . "Python Program")
           nil
-          "#!/usr/bin/env python\n"
-	  "#  -*- coding: utf-8 -*- \n"
-          "# \n"
-          "# __version__ = 0.01 \n"
-          "# __author__ = \"" (user-full-name) "\"\n#\n"
-          "\"\"\"Description:\"\"\" \n"
+"#!/usr/bin/env python
+#  -*- coding: utf-8 -*- 
+
+__version__ = 0.01 
+__author__ = \"" (user-full-name) "\"
+\"\"\"Description:
+\"\"\" 
+
+
+
+if __name__ == \"__main__\":
+    main()"
           )))
 
 
