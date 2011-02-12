@@ -108,7 +108,8 @@
  '(LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
  '(buffers-menu-show-status t)
  '(preview-auto-cache-preamble nil)
- '(reftex-plug-into-AUCTeX t)
+ '(python-use-skeletons t)
+ '(reftex-plug-into-AUCTeX t t)
  '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De))))
  '(use-dialog-box nil)
  '(use-file-dialog nil))
@@ -121,4 +122,5 @@
   ;; If there is more than one, they won't work right.
  )
 
-
+; this line was a hint on irc://#emacs@freenode
+(global-set-key (kbd "C-c g") 'magit-status)
