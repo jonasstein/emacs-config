@@ -1,5 +1,6 @@
 (load-file "~/.emacs.d/auctex.el") 
 (load-file "~/.emacs.d/autocomplete.el")
+(load-file "~/.emacs.d/gnuplot.el") 
 
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
 
