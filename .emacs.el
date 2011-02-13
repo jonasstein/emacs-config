@@ -125,3 +125,6 @@
 
 ; this line was a hint on irc://#emacs@freenode
 (global-set-key (kbd "C-c g") 'magit-status)
+
+; short answer for yes/no
+(defalias 'yes-or-no-p 'y-or-n-p)
