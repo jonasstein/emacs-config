@@ -110,7 +110,7 @@
  '(buffers-menu-show-status t)
  '(preview-auto-cache-preamble nil)
  '(python-use-skeletons t)
- '(reftex-plug-into-AUCTeX t t)
+ '(reftex-plug-into-AUCTeX t)
  '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De))))
  '(use-dialog-box nil)
  '(use-file-dialog nil))
