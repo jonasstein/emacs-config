@@ -4,7 +4,7 @@
 
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
 
-(load-file "~/.emacs.d/python.el")
+(load-file "~/.emacs.d/python_init.el")
 
 
 (load-file "~/.emacs.d/ergoday-theme.el")
