@@ -1,6 +1,7 @@
 (load-file "~/.emacs.d/auctex.el") 
 (load-file "~/.emacs.d/autocomplete.el")
 (load-file "~/.emacs.d/gnuplot.el") 
+(load-file "~/.emacs.d/linum.el") 
 
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
 
@@ -27,13 +28,6 @@
 ;(display-time-24hr-format t)
 ;(display-time-day-and-date t)
 (display-time-mode t)
-
-
-; display line numbers in margin (fringe). Emacs 23 only.
-(global-linum-mode 1) ; always show line numbers
-(setq line-number-mode t)
-(setq column-number-mode t)
-
 
 ;; paren ()
 ; http://nschum.de/src/emacs/highlight-parentheses/
