@@ -1,6 +1,6 @@
-;; -----------------------------------------------------------------------------
+;; --------------------------------------------------------------------------
 ;; Auto-Insert Stuff
-;; -----------------------------------------------------------------------------
+;; --------------------------------------------------------------------------
 
 
 (auto-insert-mode)
@@ -24,11 +24,15 @@ if __name__ == \"__main__\":
           )))
 
 
-;; mark lines with width > 80 in python-mode
+;; mark lines with width > 79 in python-mode
+;; pep8 [1] advises not to write more then 79 char per line
+;; [1] http://www.python.org/dev/peps/pep-0008/
+;;
 (add-hook 'python-mode-hook
   (lambda ()
     (font-lock-add-keywords nil
-      '(("^[^\n]\\{80\\}\\(.*\\)$" 1 font-lock-warning-face t)))))
+      '(("^[^\n]\\{79\\}\\(.*\\)$" 1 font-lock-warning-face t)))))
+
 
 
 ;; on word-delete don't delete ' -- not only in Python
@@ -42,6 +46,11 @@ if __name__ == \"__main__\":
 (add-hook 'find-file-hooks 'add-fixme-highlighting t)
 
 
-;; pymacs
-;; ropemacs
+
+
+;; debian packages python-ropemacs, pymacs
+;; http://rope.sourceforge.net/ropemacs.html
+
+
+
 ;; flymake mit pylint
