@@ -25,8 +25,8 @@
 
 ;; decorations // display modes
 ;(display-time t)
-;(display-time-24hr-format t)
-;(display-time-day-and-date t)
+(display-time-24hr-format t)
+(display-time-day-and-date t)
 (display-time-mode t)
 
 ;; paren ()
@@ -109,16 +109,6 @@
  '(use-dialog-box nil)
  '(use-file-dialog nil))
 
-
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
-
-; this line was a hint on irc://#emacs@freenode
-(global-set-key (kbd "C-c g") 'magit-status)
 
 ; short answer for yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)
