@@ -26,9 +26,9 @@
 
 ;; decorations // display modes
 ;(display-time t)
-(display-time-24hr-format t)
-(display-time-day-and-date t)
-(display-time-mode t)
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+(setq display-time-mode t)
 
 ;; paren ()
 ; http://nschum.de/src/emacs/highlight-parentheses/
