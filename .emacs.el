@@ -16,7 +16,7 @@
 
 ;; Face-style
 
-(setq inhibit-splash-screen t) 
+(setq inhibit-splash-screen 1) 
 
 ;; found this font with M-x set-default-font RET then TAB
 (set-face-font 'default "-misc-fixed-medium-r-normal--15-*-75-75-c-90-iso8859-15")
@@ -25,10 +25,10 @@
 (setq frame-title-format "%b in Emacs mode: %m")
 
 ;; decorations // display modes
-;(display-time t)
-(setq display-time-24hr-format t)
-(setq display-time-day-and-date t)
-(setq display-time-mode t)
+;(display-time 1)
+(setq display-time-24hr-format 1)
+(setq display-time-day-and-date 1)
+(setq display-time-mode 1)
 
 ;; paren ()
 ; http://nschum.de/src/emacs/highlight-parentheses/
@@ -102,10 +102,10 @@
   ;; If there is more than one, they won't work right.
  '(LaTeX-command "pdflatex")
  '(LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
- '(buffers-menu-show-status t)
+ '(buffers-menu-show-status 1)
  '(preview-auto-cache-preamble nil)
- '(python-use-skeletons t)
- '(reftex-plug-into-AUCTeX t)
+ '(python-use-skeletons 1)
+ '(reftex-plug-into-AUCTeX 1)
  '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De))))
  '(use-dialog-box nil)
  '(use-file-dialog nil))
