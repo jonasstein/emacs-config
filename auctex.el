@@ -11,7 +11,7 @@
 
 (add-hook 'TeX-mode-hook 'auto-complete-mode)
 
-
+(setq reftex-plug-into-AUCTeX t)
 
 (setq TeX-auto-untabify t) ; Automatically remove all tabs from a file before saving it.
 

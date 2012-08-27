@@ -2,17 +2,20 @@
 ;(load-file "~/.emacs.d/autocomplete.el")
 (load-file "~/.emacs.d/gnuplot.el") 
 (load-file "~/.emacs.d/linum.el") 
+(load-file "~/.emacs.d/package-repos.el") 
 
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
 
 (load-file "~/.emacs.d/python_init.el")
 (load-file "~/.emacs.d/magit_init.el")
-
+(load-file "~/.emacs.d/pov-mode_init.el")
 
 (load-file "~/.emacs.d/ergoday-theme.el")
-(require 'color-theme)
-(color-theme-initialize)
-(ergoday)
+; commented out on 2012-01-11 as it did not work in my office
+; have to fix it later: FIXME
+;(require 'color-theme)
+;(color-theme-initialize)
+;(ergoday)
 
 ;; Face-style
 
