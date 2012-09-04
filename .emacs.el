@@ -1,14 +1,19 @@
 (load-file "~/.emacs.d/auctex.el") 
 ;(load-file "~/.emacs.d/autocomplete.el")
 (load-file "~/.emacs.d/gnuplot.el") 
-(load-file "~/.emacs.d/linum.el") 
+(load-file "~/.emacs.d/ess-mode.el") 
+;; (load-file "~/.emacs.d/linum.el") obsolete since v24
+(line-number-mode t)
+
 (load-file "~/.emacs.d/package-repos.el") 
 
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
 
 (load-file "~/.emacs.d/python_init.el")
 (load-file "~/.emacs.d/magit_init.el")
+(load-file "~/.emacs.d/org-mode-init.el")
 (load-file "~/.emacs.d/pov-mode_init.el")
+
 
 (load-file "~/.emacs.d/ergoday-theme.el")
 ; commented out on 2012-01-11 as it did not work in my office
@@ -99,16 +104,16 @@
 ;;   emacs-goodies-el
 
 (custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
  '(LaTeX-command "pdflatex")
  '(LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
  '(buffers-menu-show-status 1)
  '(preview-auto-cache-preamble nil)
  '(python-use-skeletons 1)
- '(reftex-plug-into-AUCTeX 1)
+ '(reftex-plug-into-AUCTeX 1 t)
  '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De))))
  '(use-dialog-box nil)
  '(use-file-dialog nil))
@@ -116,3 +121,9 @@
 
 ; short answer for yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
