@@ -28,3 +28,8 @@
 (setq TeX-auto-save t) ; Enable parse on save.
 
 (setq preview-image-type (quote dvipng))
+
+(setq LaTeX-command "pdflatex")
+(setq LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
+(setq buffers-menu-show-status 1)
+(setq preview-auto-cache-preamble nil)

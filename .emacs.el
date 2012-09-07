@@ -1,10 +1,9 @@
+
 (load-file "~/.emacs.d/auctex.el") 
 ;(load-file "~/.emacs.d/autocomplete.el")
 (load-file "~/.emacs.d/gnuplot.el") 
-(load-file "~/.emacs.d/ess-mode.el") 
-;; (load-file "~/.emacs.d/linum.el") obsolete since v24
-(line-number-mode t)
-
+(load-file "~/.emacs.d/ess-mode-init.el") 
+(load-file "~/.emacs.d/ido-mode.el") 
 (load-file "~/.emacs.d/package-repos.el") 
 
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
@@ -13,30 +12,20 @@
 (load-file "~/.emacs.d/magit_init.el")
 (load-file "~/.emacs.d/org-mode-init.el")
 (load-file "~/.emacs.d/pov-mode_init.el")
-
+(load-file "~/.emacs.d/spellchecker.el")
 
 (load-file "~/.emacs.d/ergoday-theme.el")
+(package-initialize)
+
+(line-number-mode t)
+
 ; commented out on 2012-01-11 as it did not work in my office
 ; have to fix it later: FIXME
 ;(require 'color-theme)
 ;(color-theme-initialize)
 ;(ergoday)
 
-;; Face-style
-
-(setq inhibit-splash-screen 1) 
-
-;; found this font with M-x set-default-font RET then TAB
-(set-face-font 'default "-misc-fixed-medium-r-normal--15-*-75-75-c-90-iso8859-15")
-
-;; http://www.emacswiki.org/cgi-bin/wiki/FrameTitle 
-(setq frame-title-format "%b in Emacs mode: %m")
-
-;; decorations // display modes
-;(display-time 1)
-(setq display-time-24hr-format 1)
-(setq display-time-day-and-date 1)
-(setq display-time-mode 1)
+(load-file "~/.emacs.d/lookfeel.el")
 
 ;; paren ()
 ; http://nschum.de/src/emacs/highlight-parentheses/
@@ -83,35 +72,13 @@
 (set-language-environment "utf-8")
 
 
-;; spellchecker
-(setq speck-engine (quote Hunspell))
-(setq speck-hunspell-language-options
-      (quote (("de" utf-8 nil t nil)
-              ("en" utf-8 nil nil nil)
-              ("ru" koi8-r nil nil nil))))
-(setq speck-hunspell-program "hunspell")
-(setq speck-hunspell-default-dictionary-name "de_DE")
-;; en_US
 
-(defun turn-spell-checking-on ()
-  (flyspell-mode 0)
-  )
-
-
-(add-hook 'text-mode-hook 'turn-spell-checking-on)
-
-;; FIXME
-;;   emacs-goodies-el
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(LaTeX-command "pdflatex")
- '(LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
- '(buffers-menu-show-status 1)
- '(preview-auto-cache-preamble nil)
  '(python-use-skeletons 1)
  '(reftex-plug-into-AUCTeX 1 t)
  '(safe-local-variable-values (quote ((speck-hunspell-default-dictionary-name . "de-neu") (ispell-dictionary . de-neu) (ispell-local-dictionary . De))))
@@ -119,11 +86,5 @@
  '(use-file-dialog nil))
 
 
-; short answer for yes/no
-(defalias 'yes-or-no-p 'y-or-n-p)
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+
