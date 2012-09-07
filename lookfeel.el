@@ -17,3 +17,21 @@
 
 ; short answer for yes/no
 (defalias 'yes-or-no-p 'y-or-n-p)
+
+; linenumbers on the left
+(setq global-linum-mode t)
+(line-number-mode t)
+
+
+; commented out on 2012-01-11 as it did not work in my office
+; have to fix it later: FIXME
+;(require 'color-theme)
+;(color-theme-initialize)
+;(ergoday)
+
+
+;; paren ()
+; http://nschum.de/src/emacs/highlight-parentheses/
+; (require 'highlight-parentheses)
+(show-paren-mode 1)
+(setq show-paren-delay 0)
