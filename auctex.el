@@ -33,3 +33,6 @@
 (setq LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
 (setq buffers-menu-show-status 1)
 (setq preview-auto-cache-preamble nil)
+
+
+(setq truncate-lines t)  ;   Do not make virtual linebreaks. This is useful for long tables in LaTeX. Found in http://www.siart.de/typografie/siart_emacs.pdf

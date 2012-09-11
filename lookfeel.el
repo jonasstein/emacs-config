@@ -19,6 +19,7 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 
 ; linenumbers on the left
+
 (setq global-linum-mode t)
 (line-number-mode t)
 
