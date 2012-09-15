@@ -1,4 +1,5 @@
 ;; AUCTeX 
+;(load "auctex.el" nil t t)
 
 (setq TeX-auto-save t)
 (setq-default TeX-master nil)
@@ -27,11 +28,14 @@
 (setq TeX-parse-self t) ; Enable parse on load.
 (setq TeX-auto-save t) ; Enable parse on save.
 
-(setq preview-image-type (quote dvipng))
-
 (setq LaTeX-command "pdflatex")
 (setq LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
 (setq buffers-menu-show-status 1)
+
+;;
+;; PREVIEW
+;(load "preview-latex.el" nil t t)
+(setq preview-image-type (quote dvipng))
 (setq preview-auto-cache-preamble nil)
 
 
