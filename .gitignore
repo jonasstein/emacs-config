@@ -2,3 +2,5 @@ ac-comphist.dat
 auto-save-list/*
 *session*
 url/*
+/elpa/archives/*
+

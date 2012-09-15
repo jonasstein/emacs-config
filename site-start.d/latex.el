@@ -2,7 +2,6 @@
 ;(load "auctex.el" nil t t)
 
 (setq TeX-auto-save t)
-(setq-default TeX-master nil)
 
 (add-hook 'LaTeX-mode-hook 'visual-line-mode)
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
@@ -24,7 +23,7 @@
 
 
 (setq-default TeX-master "master") ; All master files called "master".
-(setq-default TeX-master nil)
+;(setq-default TeX-master nil)
 (setq TeX-parse-self t) ; Enable parse on load.
 (setq TeX-auto-save t) ; Enable parse on save.
 
@@ -36,7 +35,12 @@
 ;; PREVIEW
 ;(load "preview-latex.el" nil t t)
 (setq preview-image-type (quote dvipng))
-(setq preview-auto-cache-preamble nil)
+;(setq preview-auto-cache-preamble nil)
 
 
 (setq truncate-lines t)  ;   Do not make virtual linebreaks. This is useful for long tables in LaTeX. Found in http://www.siart.de/typografie/siart_emacs.pdf
+
+
+;; Auto-insert $
+(setq TeX-math-close-double-dollar t)
+
