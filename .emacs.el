@@ -15,7 +15,7 @@
 (load-file "~/.emacs.d/spellchecker.el")
 (load-file "~/.emacs.d/ergoday-theme.el")
 (load-file "~/.emacs.d/lookfeel.el")
-
+(load-file "~/.emacs.d/yasnippet_init.el")
 
 ;;  ~/.emacs.el consists of
 ;;(load "~/.emacs.d/.emacs.el")
