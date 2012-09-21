@@ -1,0 +1,9 @@
+#name :Subfloat structure
+# --
+\begin{figure} [${1:tbh}]
+\centering
+\subfloat []{\label{${2:a}} \includegraphics[width=${4:0.5}\textwidth]{${3:location}}}
+\subfloat []{\label{${5:b}} \includegraphics[width=${7:0.5}\textwidth]{${6:location}}}
+\label{${8:fig}}
+\caption{${9:Name}}
+\end{figure}
