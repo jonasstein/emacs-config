@@ -273,7 +273,7 @@
 	      [(20090723 435)
 	       nil "Same frame speedbar [source: wiki]" single])
  (solarized-theme .
-		  [(20120828 317)
+		  [(20120919 2007)
 		   nil "The Solarized color theme, ported to Emacs. [source: github]" tar])
  (smooth-scrolling .
 		   [(20111206 1951)
@@ -451,7 +451,7 @@
 	 [(20120814 1020)
 	  nil "Python's flying circus support for Emacs [source: github]" single])
  (pyregexp .
-	   [(20120911 1938)
+	   [(20120919 1909)
 	    nil "A Python regexp/replace command for Emacs with interactive visual feedback [source: github]" tar])
  (puppet-mode .
 	      [(20120704 1849)
@@ -722,7 +722,7 @@
 	 [(20120823 1747)
 	  nil "Org-blog exporter [source: github]" tar])
  (nrepl-ritz .
-	     [(20120918 2039)
+	     [(20120919 1357)
 	      ((nrepl
 		(0 1 4)))
 	      "nrepl extensions for ritz [source: github]" single])
@@ -1501,6 +1501,9 @@
  (calfw-gcal .
 	     [(20120111 1900)
 	      nil "edit Google calendar for calfw.el. [source: github]" tar])
+ (calfw .
+	[(20111208 1714)
+	 nil "Calendar view framework on Emacs [source: github]" tar])
  (c-eldoc .
 	  [(20120430 408)
 	   nil "helpful description of the arguments to C functions [source: github]" single])
@@ -1512,6 +1515,9 @@
 	   ((inf-ruby
 	     (2 1)))
 	   "Interact with Bundler from Emacs [source: github]" single])
+ (buffer-utils .
+	       [(20120914 1518)
+		nil "Buffer-manipulation utility functions [source: github]" single])
  (buffer-move .
 	      [(20110305 249)
 	       nil "Swap buffers without typing C-x b on each window [source: wiki]" single])
@@ -1622,11 +1628,5 @@
 	    "An auto-complete source for Clojure using nrepl completions [source: github]" single])
  (ac-dabbrev .
 	     [(20091116 1626)
-	      nil "auto-complete.el source for dabbrev [source: wiki]" single])
- (calfw .
-	[(20111208 1714)
-	 nil "Calendar view framework on Emacs [source: github]" tar])
- (buffer-utils .
-	       [(20120914 1518)
-		nil "Buffer-manipulation utility functions [source: github]" single]))
+	      nil "auto-complete.el source for dabbrev [source: wiki]" single]))
 
