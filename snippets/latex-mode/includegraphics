@@ -1,4 +1,3 @@
-# -*- mode: snippet -*-
 # name: figure
 # key: figure
 # binding: direct-keybinding
@@ -8,7 +7,8 @@
 # --
 \begin{figure}
   \centering
-  \includegraphics[]{Sxxx/${1}}
+  \includegraphics[]{Sxxx/${1:pdf}}
   \caption{${2:caption}}
-  \label{$1}
+  \label{}
 \end{figure}
+
