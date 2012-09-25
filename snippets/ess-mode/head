@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: head
+# key: head
+# --
+mym <- "M$1"
+mysample <- "S$2"
+mysuffix <- ""  # only for classic plot() filename
+
+
+source("init.R")
+source("loadlibs.R")
+library(ggplot2)
