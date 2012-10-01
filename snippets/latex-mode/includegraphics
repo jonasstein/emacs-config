@@ -1,14 +1,11 @@
 # name: figure
 # key: figure
-# binding: direct-keybinding
-# expand-env: ((some-var some-value))
-# type: command
 # contributor: Jonas Stein 
 # --
 \begin{figure}
   \centering
   \includegraphics[]{Sxxx/${1:pdf}}
   \caption{${2:caption}}
-  \label{}
+  \label{$1}
 \end{figure}
 
