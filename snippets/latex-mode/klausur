@@ -1,0 +1,87 @@
+# -*- mode: snippet -*-
+# name: klausur
+# key: klausur
+# --
+\documentclass[a4paper,11pt, headsepline,headinclude]{scrreprt}
+\usepackage{ifthen}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lastpage}
+\usepackage{tabularx}
+\usepackage{scrpage2}
+\usepackage[]{graphicx}
+\usepackage{paralist}
+\usepackage[babel,german=quotes]{csquotes}
+\usepackage{geometry}
+
+\geometry{a4paper, portrait, inner=2.5cm, outer=2cm, top=2.5cm, bottom=2cm}
+
+\newcounter{AufgabenCounter}
+\setcounter{AufgabenCounter}{1}
+
+\newcounter{Gruppenwahl}
+
+% Jeweils eine der folgenden Zeilen auskommentieren:
+%\setcounter{Gruppenwahl}{1}  % Gruppe A
+\setcounter{Gruppenwahl}{2}  % Gruppe B
+
+\newcommand{\AB}[2]%
+{%
+\ifthenelse{\equal{\theGruppenwahl}{1}}{#1}{}%
+\ifthenelse{\equal{\theGruppenwahl}{2}}{#2}{}%
+}
+% Verwendung Gruppe A rechnet 1+2 und Gruppe B rechnet exp(x)
+% \AB{\[1+2\]}{\[\exp(x)\]} 
+
+\pagestyle{scrheadings}
+\newcommand{\Thema}{Vektorrechnung}
+\newcommand{\Datum}{30. Mai 2012}
+\newcommand{\Kurs}{Mathematik GK\,12}
+\newcommand{\Klausurnummer}{4. Klausur}
+\newcommand{\Gruppe}{Gruppe \Alph{Gruppenwahl}}
+\newcommand{\Seite}{Seite \thepage/\pageref{LastPage}}
+
+
+% Nummer und Punkte selbst angeben
+\newcommand{\AufgabeNrPkt}[2]{\vspace{5mm} \textbf{#1) \hfill (#2 Punkte)} }
+
+% Nummer selbst angeben, aber keine Anzeige von Punkten 
+\newcommand{\AufgabeNr}[1]{\vspace{5mm} \textbf{#1)} }
+
+% Nummer automatisch und keine Anzeige von Punkten 
+\newcommand{\Aufgabe}{%
+\AufgabeNr{Aufgabe \theAufgabenCounter}%
+\stepcounter{AufgabenCounter}}
+
+% Nummer automatisch, Anzeige von Punkten 
+\newcommand{\AufgabePkt}[1]{%
+\AufgabeNrPkt{Aufgabe \theAufgabenCounter}{#1}%
+\stepcounter{AufgabenCounter}}
+
+
+\setlength{\parindent}{0pt} % Absatzeinrückung von Links
+
+
+\lehead{Name:}
+\lohead{Name:\\\\ \Kurs}
+\rehead{\Klausurnummer, \Datum \\\\ \Gruppe, \Seite}
+\rohead{\Klausurnummer, \Datum \\\\ \Gruppe, \Seite}
+
+\cfoot{} 
+% leere Fußzeile, damit keine Seitenzahl in der Fußzeile erscheint. 
+% Wir haben ja eine in der Kopfzeile
+
+\cohead{\large{\Thema}}
+
+\begin{document}
+
+
+
+{\bigskip {\large \textsl{Viel Erfolg!}}}
+
+
+\end{document}
+%
+% compile with pdflatex klausur.tex && acroread klausur.pdf 

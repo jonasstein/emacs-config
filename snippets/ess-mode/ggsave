@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: ggsave
+# key: ggsave
+# --
+ggsave(path=mygfxdir, filename=paste0(mym,"_",mysuffix,".pdf"), width=5.5, height=3, dpi=300)
