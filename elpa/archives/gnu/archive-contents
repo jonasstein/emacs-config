@@ -1,4 +1,7 @@
 (1
+ (ack .
+      [(0 8)
+       nil "Interface to ack, a source code search tool" tar])
  (adaptive-wrap .
 		[(0 1)
 		 nil "Smart line-wrapping with wrap-prefix" single])
@@ -107,6 +110,9 @@
  (sisu-mode .
 	    [(3 0 3)
 	     nil "Major mode for SiSU markup text" single])
+ (smart-operator .
+		 [(4 0)
+		  nil "Insert operators with surrounding spaces smartly" single])
  (svg-clock .
 	    [(0 4)
 	     nil "Analog clock using Scalable Vector Graphics" single])

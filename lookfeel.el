@@ -36,3 +36,6 @@
 ; (require 'highlight-parentheses)
 (show-paren-mode 1)
 (setq show-paren-delay 0)
+
+(setq use-dialog-box nil)
+(setq use-file-dialog nil)
