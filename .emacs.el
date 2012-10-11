@@ -12,7 +12,7 @@
 (load-file "~/.emacs.d/magit_init.el")
 (load-file "~/.emacs.d/org-mode-init.el")
 ;(load-file "~/.emacs.d/pov-mode_init.el")
-;(load-file "~/.emacs.d/spellchecker.el")
+;(load-file "~/.emacs.d/spellchecker.el") 
 ;(load-file "~/.emacs.d/ergoday-theme.el")
 (load-file "~/.emacs.d/lookfeel.el")
 (load-file "~/.emacs.d/yasnippet_init.el")
