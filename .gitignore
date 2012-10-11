@@ -4,3 +4,4 @@ auto-save-list/*
 url/*
 /elpa/archives/*
 archive-contents
+/auctex-init.el~
