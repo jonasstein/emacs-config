@@ -114,9 +114,9 @@
 			       (0 2 3)))
 			     "Progress-reporter with fancy characters [source: github]" single])
  (unicode-fonts .
-		[(20121010 1100)
+		[(20121010 1447)
 		 ((font-utils
-		   (0 6 6))
+		   (0 6 8))
 		  (ucs-utils
 		   (0 7 2))
 		  (persistent-soft
@@ -1050,7 +1050,7 @@
 		    (1 40)))
 		  "Serve buffers live over HTTP [source: github]" tar])
  (ignoramus .
-	    [(20121009 2046)
+	    [(20121010 1622)
 	     nil "Ignore backups, build files, et al. [source: github]" single])
  (iedit .
 	[(20120912 1523)
@@ -1069,7 +1069,7 @@
 		      [(20120920 1848)
 		       nil "highlight the word the point is on [source: github]" single])
  (icicles .
-	  [(20121009 2342)
+	  [(20121010 2326)
 	   nil "Minibuffer input completion and cycling. [source: wiki]" tar])
  (ibuffer-vc .
 	     [(20120922 1120)
@@ -1225,9 +1225,9 @@
  (gitconfig-mode .
 		 [(20121008 1216)
 		  nil "Major mode for editing .gitconfig files [source: github]" single])
- (git-commit-mode .
-		  [(20121009 1537)
-		   nil "Major mode for editing git commit messages [source: github]" single])
+ (flymake-checkers .
+		   [(20121011 1646)
+		    nil "Additional syntax checkers for flymake [source: github]" single])
  (git-blame .
 	    [(20110509 1226)
 	     nil "Minor mode for incremental blame for Git [source: github]" single])
@@ -1274,7 +1274,7 @@
 	    [(20101013 2052)
 	     nil "directional frame selection routines [source: wiki]" single])
  (font-utils .
-	     [(20121010 1124)
+	     [(20121010 1445)
 	      ((persistent-soft
 		(0 8 6))
 	       (pcache
@@ -1330,7 +1330,7 @@
 	       [(20120606 1317)
 		nil "Flex matching (like ido) in isearch. [source: hg]" single])
  (fixmee .
-	 [(20121010 1418)
+	 [(20121010 1513)
 	  ((button-lock
 	    (0 9 8))
 	   (nav-flash
@@ -1455,9 +1455,9 @@
        [(20120601 1806)
 	nil "simple window manager for emacs [source: github]" tar])
  (dynamic-fonts .
-		[(20121008 912)
+		[(20121010 1436)
 		 ((font-utils
-		   (0 6 6))
+		   (0 6 8))
 		  (persistent-soft
 		   (0 8 6))
 		  (pcache
@@ -1535,7 +1535,7 @@
 	  [(20120115 1513)
 	   nil "a pcl-cvs like interface for managing darcs patches [source: darcs]" tar])
  (d-mode .
-	 [(20120822 2050)
+	 [(20121011 50)
 	  nil "D Programming Language mode for (X)Emacs [source: github]" single])
  (cyberpunk-theme .
 		  [(20120930 18)
@@ -1683,7 +1683,7 @@
 		[(20120625 1244)
 		 nil "quickly traverse all backups of a file [source: github]" single])
  (back-button .
-	      [(20121010 1419)
+	      [(20121010 1907)
 	       ((nav-flash
 		 (1 0 0))
 		(smartrep
