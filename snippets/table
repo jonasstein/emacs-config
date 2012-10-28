@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: table
+# key: table
+# --
+\begin{table} % Koma Script S. 144
+  \captionabove{This is the caption}
+  \begin{tabular}{ll}
+    \toprule
+      Property  & Value \\
+   \midrule
+     Energy &  1\\
+   \bottomrule
+  \end{tabular}
+\end{table}

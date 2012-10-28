@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: ggplot
+# key: ggplot
+# --
+ggplot() +
+  geom_rect(aes(xmin=TcS-Err,xmax=TcS+Err,ymin=-Inf, ymax=+Inf), fill=TcSColours[2]) +
+  geom_vline(xintercept=TcS, colour=TcSColours[7], linetype = 2)+
+  geom_path(data=mydf, aes(x=T, y=(RA-RB)/2, colour=as.factor(U), group=U)) +
+  scale_x_continuous(textT, limits = c(5, 15), breaks=seq(5,15,1))+
+  geom_text(aes(x=TcS, label=TcNames, y=0.04), angle=90)+
+  scale_colour_discrete(name=textT) +
+  theme_bw() +
+ theme(text=element_text(size=11))

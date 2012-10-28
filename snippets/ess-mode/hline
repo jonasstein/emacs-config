@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: hline
+# key: hline
+# --
+geom_hline(yintercept=$1, colour=$2, linetype = $3)+

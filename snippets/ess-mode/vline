@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: vline
+# key: vline
+# --
+geom_vline(xintercept=$1, colour=$2, linetype = $3)+
