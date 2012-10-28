@@ -4,9 +4,14 @@
 # --
 mym <- "M$1"
 mysample <- "S$2"
-mysuffix <- ""  # only for classic plot() filename
+mysuffix <- ""  # 
 
 
 source("init.R")
 source("loadlibs.R")
-library(ggplot2)
+
+filelist <- getfilelist()
+filelist$T <- filelist$T *milli
+
+
+ggsave(path=mygfxdir, filename=paste0(mym,"_",mysuffix,".pdf"), width=5.5, height=3, dpi=300)

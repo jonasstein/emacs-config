@@ -6,7 +6,7 @@
 
 ;(load-file "~/.emacs.d/autocomplete.el")
 (load-file "~/.emacs.d/gnuplot.el") 
-;(load-file "~/.emacs.d/ess-mode-init.el") 
+(load-file "~/.emacs.d/ess-mode-init.el") 
 ;; (load-file "~/.emacs.d/graphviz.el") FIXME
 ;(load-file "~/.emacs.d/python_init.el")
 (load-file "~/.emacs.d/magit_init.el")

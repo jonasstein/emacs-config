@@ -1,13 +1,14 @@
 # name: qplot
 # key: qplot
 # --
-qplot(x=$1, y=$2, data=$3, geom="path", 
-      colour=T, group=T,
-      xlab="Time (s)", ylab="response")+
+qplot(x=$1, y=$2, data=$3, geom="path", colour=T, group=T) +
+      xlab(textE) + ylab(textPau) +	
 #  scale_colour_hue(name="Temperature (K)", h=c(100, 360)) +
-  scale_colour_gradientn(colours = rainbow(48)) +
+
   ggtitle(paste(mysample, mym)) +
-  theme_bw() 
+  theme_bw() +
+  theme(text=element_text(size=11))
+
 
 #mysuffix <- "xxx"
 ggsave(path=mygfxdir, filename=paste0(mym,"_",mysuffix,".pdf"), width=5.5, height=3, dpi=300)
