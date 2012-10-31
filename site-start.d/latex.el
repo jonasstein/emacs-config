@@ -50,3 +50,28 @@
 
 (setq preview-auto-cache-preamble nil)
 (setq preview-image-type (quote dvipng)) ; URGEND LINE BECAUSE OF GS 8.71 BUG
+
+;; http://stackoverflow.com/questions/2199678/how-to-call-latexmk-in-emacs-and-jump-to-next-error
+;; (add-hook 'LaTeX-mode-hook (lambda ()
+;;   (push 
+;;     '("Latexmk" "latexmk -pdf %s" TeX-run-TeX nil t
+;;       :help "Run Latexmk on file")
+;;     TeX-command-list)))
+
+
+(add-hook 'LaTeX-mode-hook (lambda ()
+  (push 
+    '("Latexmk" "latexmk -pdf %(mode) %s" TeX-run-TeX nil t
+      :help "Run Latexmk on file")
+    TeX-command-list)))
+
+
+'("%(-PDF)"
+  (lambda ()
+    (if (and (not TeX-Omega-mode)
+             (or TeX-PDF-mode TeX-DVI-via-PDFTeX))
+        "-pdf" "")))
+
+
+(add-hook 'LaTeX-mode-hook (function turn-on-reftex))
+(setq reftex-plug-into-AUCTeX t)
