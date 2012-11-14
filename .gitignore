@@ -5,3 +5,4 @@ url/*
 /elpa/archives/*
 archive-contents
 /auctex-init.el~
+/snippets/latex-mode/letter

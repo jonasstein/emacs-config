@@ -10,8 +10,15 @@ mysuffix <- ""  #
 source("init.R")
 source("loadlibs.R")
 
+myxtal <- XTxtalname(mysample)
+mychem <- XTformula(mysample)
+d <- XTthickness(mysample)
+
+
 filelist <- getfilelist()
 filelist$T <- filelist$T *milli
 
+#ggplot()
+#  ggtitle(maketitle(mychem, paste(myxtal, mysample, mym))) +
 
 ggsave(path=mygfxdir, filename=paste0(mym,"_",mysuffix,".pdf"), width=5.5, height=3, dpi=300)

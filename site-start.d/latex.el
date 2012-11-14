@@ -1,22 +1,27 @@
 ;; AUCTeX 
 ;(load "auctex.el" nil t t) ;; DO NOT USE THIS LINE
 
-;(setq LaTeX-command "pdflatex")
+; Turn on RefTeX for AUCTeX, http://www.gnu.org/s/auctex/manual/reftex/reftex_5.html
+(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
+; Make RefTeX interact with AUCTeX,    http://www.gnu.org/s/auctex/manual/reftex/AUCTeX_002dRefTeX-Interface.html
+(setq reftex-plug-into-AUCTeX t)  
 
-;; (setq TeX-auto-save t)
+(add-hook 'LaTeX-mode-hook
+          (lambda ()
+            (require 'reftex)
+))
+
+;; http://www.gnu.org/software/auctex/manual/auctex/Parsing-Files.html#Parsing-Files
+(setq TeX-parse-self t) ; Enable parse on load.
+(setq TeX-auto-save t) ; Enable parse on save.
+
+(setq TeX-auto-save t) ; http://www.gnu.org/software/auctex/manual/auctex/Multifile.html#Multifile
 
 ;; (add-hook 'LaTeX-mode-hook 'visual-line-mode)
 ;; (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
-;; (add-hook 'TeX-mode-hook 'auto-complete-mode)
-;; ;(add-hook 'LaTeX-mode-hook 'turn-on-reftex)
-;; ;(setq reftex-plug-into-AUCTeX t)
 
 
-
-;; ;(setq reftex-plug-into-AUCTeX t) ; FIXME are these 2 lines redundant?
-;; ;(add-hook 'LaTeX-mode-hook 'turn-on-reftex)   ; with AUCTeX LaTeX mode
-
-;; (setq TeX-auto-untabify t) ; Automatically remove all tabs from a file before saving it.
+(setq TeX-auto-untabify t) ; Automatically remove all tabs from a file before saving it.
 
 ;;  (add-hook 'LaTeX-mode-hook
 ;;            (function
@@ -26,12 +31,10 @@
 
 
 ;; (setq-default TeX-master "master") ; All master files called "master".
-;; (setq TeX-parse-self t) ; Enable parse on load.
-;; (setq TeX-auto-save t) ; Enable parse on save.
 
 
-;; ;(setq LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
-;; (setq buffers-menu-show-status t)
+; (setq LaTeX-fill-break-at-separators (quote ({ } \[ \\\( \\\) \\\[ \\\])))
+; (setq buffers-menu-show-status t)
 
 ;; ;;
 ;; ;; PREVIEW
@@ -44,12 +47,13 @@
 
 
 ;; ;; Auto-insert $
-;(setq TeX-math-close-double-dollar t)
+(setq TeX-math-close-double-dollar t)
 
-;; (setq TeX-PDF-mode t)
+(setq TeX-PDF-mode t) ; PDF button per default instead of DVI
 
 (setq preview-auto-cache-preamble nil)
 (setq preview-image-type (quote dvipng)) ; URGEND LINE BECAUSE OF GS 8.71 BUG
+
 
 ;; http://stackoverflow.com/questions/2199678/how-to-call-latexmk-in-emacs-and-jump-to-next-error
 ;; (add-hook 'LaTeX-mode-hook (lambda ()
@@ -71,6 +75,8 @@
     (if (and (not TeX-Omega-mode)
              (or TeX-PDF-mode TeX-DVI-via-PDFTeX))
         "-pdf" "")))
+
+
 
 
 (add-hook 'LaTeX-mode-hook (function turn-on-reftex))

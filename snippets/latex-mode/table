@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: table
+# key: table
+# --
+\begin{tabular}[ht]{l S S p{7cm}}
+\toprule
+FIXME & {$\mathrm{T_{2}}$}  & {$\mathrm{T_N}$}  & {Method and Source} \\
+\midrule
+asdf & 1.0 & 1.5(1) & FIXME \\
+\bottomrule
+\end{tabular}
